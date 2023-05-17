@@ -59,7 +59,7 @@ def get_data(dataset, max_train_size=None, max_test_size=None, print_log=True, d
     print("test: ", test_start, test_end)
     x_dim = get_data_dim(dataset)
 
-
+    '''
     db_train = []
     for filename in os.listdir(prefix):
         if filename.endswith('train.pkl'):
@@ -92,7 +92,7 @@ def get_data(dataset, max_train_size=None, max_test_size=None, print_log=True, d
     myfile = open(os.path.join(prefix, "Exa_test_label.pkl"), "wb")
     pickle.dump(db_test_label, myfile, protocol=pickle.HIGHEST_PROTOCOL)
     myfile.close()
-
+    '''
 
 
 
