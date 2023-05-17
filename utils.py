@@ -34,7 +34,7 @@ def get_data_dim(dataset):
     elif str(dataset).startswith('machine'):
         return 38
     elif dataset == 'Exa':
-        return 21
+        return 20
     else:
         raise ValueError('unknown dataset '+str(dataset))
 
